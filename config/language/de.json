@@ -1,0 +1,371 @@
+{
+    "units":{
+        "methode":{
+            "updateTemplate":{
+                "UnitsReplaced":"Einheiten ersetzt"
+            },
+            "reviveUnits":{
+                "NotFull":"Fehler! Armee nicht voll!",
+                "NoUnits":"Fehler! Keine Einheit für Armee!"
+            }
+        }
+    },
+    "motivate":{
+        "methods":{
+            "buff":{
+                "Motivating":"Motiviere...",
+                "MotivSuccess":"Motivieren erfolgreich",
+                "MotivateNoOne":"Niemand zum motivieren",
+                "MotivateProgress":"Block %0%/%1% erledigt"
+            }
+        }
+    },
+    "friendtavern":{
+        "methods":{
+            "deleteFriends":{
+                "Searching":"Suche nicht aktive Freunde...",
+                "Removed": "%0% nicht aktive Freunde entfernt"
+            },
+            "addNewFriends":{
+                "RandInvited": "Zufällige Spieler eingeladen"
+            },
+            "visitTaverns":{
+                "Visiting":"Besuche Tavernen...",
+                "Visitied":"Tavernen besucht",
+                "NoVisitable":"Keine Tavernen zum besuchen"
+            }
+        }
+    },
+    "bghelper":{
+        "methods":{
+            "bgHelper":{
+                "CollectionHelperTitle":"Alles-Einsammeln Helfer",
+                "ProcessingCityData":"Verarbeite Stadtdaten",
+                "ProdBotRunning":"!!!! PRODUKTIOS-BOT LÄUFT !!!!"
+            },
+            "showProdBot":{
+                "ProdBotTitle":"Produktions Bot"
+            },
+            "collectUseBlueGalaxy":{
+                "SomthingWrong":"Fataler Fehler!<br>Bitte lade das Spiel neu!",
+                "AllCollected":"ALLES EINGESAMMELT"
+            },
+            "bgRecalc":{
+                "NoBuildings":"Keine Gebäude zum einsammeln",
+                "TutorialText1":"\n------------- TUTORIAL BLUE GALAXY HELPER -------------\nHERE YOU CAN COLLECT YOUR HARVEST WITHOUT SPENDING DIAMONDS!\nTHERE ARE ONE/TWO POSSIBLE OPTION(S) ( DEPENDS ON IF YOU HAVE A BLUE GALAXY OR NOT )\nPLEASE READ EVERYTHING! IT WILLONLY BE DISPLAYED ONCE AFTER YOU COMLPETED IT!\n------------- PAGE 1 OF 3 -------------\n",
+                "TutorialText2":"\n------------- TUTORIAL BLUE GALAXY HELPER -------------\nOPTION 'Use Blue Galaxy':\nIt will collect the Blue Galaxy or use the remaining attempts\nand collects the amount of buildings equal to the amount of attempts\ncorresponding to the selected priority\nAfter this you could have more than 99 FP in Bar\nso the second option wont collect anything!\n- Reload Game\nor\n- Spend the 1 FP\n- get down to <99\n- ------------- PAGE 2 OF 3 -------------\n",
+                "TutorialText3":"\n------------- TUTORIAL BLUE GALAXY HELPER -------------\nOPTION 'Collect All':\nIf a Blue Galaxy is available to harvest, it will collect it first.\nThen it will collect all finished buildings at once so the Blue Galaxy Bonus\nis applied to all buildings.\n- Reload Game\nor\n- Spend the 1 FP\nto refresh the FP bar\n------------- PAGE 3 OF 3 -------------\n"
+            }
+        }
+    },
+    "plunder":{
+        "methods":{
+            "processNeihborData":{
+                "ProcessingNeighborHood":"Verarbeite Nachbarschaft (%0%)"
+            },
+            "buildPlunderWindow":{
+                "PlunderHelperTitle":"Plünder Helfer",
+                "ProcessingNeighborHood":"Verarbeite Nachbarschaft",
+                "Action0":"Angriff & Plündern",
+                "Action1":"Plündern",
+                "NothingToPlunder":"Nichts zum plündern"
+            },
+            "clickPlunderNeighbor":{
+                "Protection":"Spieler hat einen Stadtschutz",
+                "ErrorReload":"Fehler beim Angriff... Bitte neuladen",
+                "Lost":"Verloren! Nichts zum Plündern",
+                "UpdateUnits":"BITTE ARMEE ERNEUERN"
+            },
+            "plunderNeighbor":{
+                "PreventGalata":"Galata Turm verhinderte plündern: %0%'s %1%",
+                "PlunderSuccess":"Geplündert %0%'s %1%",
+                "Nothing":"Nichts geplündert..."
+            }
+        }
+    },
+    "sniper":{
+        "methods":{
+            "searchSnipGB":{
+                "SnipeWindowTitle": "Sniping - %0%"
+            },
+            "GetGBs":{
+                "Getting":"Verarbeite %0%",
+                "GetGBOverview":"Verarbeite LG Übersicht",
+                "NoSnip":"Keine profitables LG gefunden",
+                "Sniped":"Sniped %0%'s %1% mit %2% FP (%3% FP Profit)",
+                "ProfitGone":"LG-PROFIT WEG! (#%0% %1% %2%)"
+            },
+            "getGBDetails":{
+                "GetGBDetails":"Verarbeite LG-Details"
+            },
+            "findProfitableGBs":{
+                "SearchProfit":"Suche profitables LG"
+            },
+            "parseGBDetails":{
+                "ParseGBDetails":"Parse LG-Details"
+            },
+            "attackNeighbors":{
+                "Attacking":"Starte Angriffe auf Nachbarn..."
+            },
+            "attackNeighbor":{
+                "Failed":"Fehler gegen %0% - Angriff gestoppt",
+                "Success":"Gewonnen gegen %0%",
+                "Lost":"Verloren gegen %0%",
+                "Error":"Angriff abgebrochen wegen Fehler (%0%)",
+                "Finish":"Nachbarschaft brennt nun :D"
+            }
+        }
+    },
+    "addHandler":{
+        "created":{
+            "GEX":{
+                "GexFinished":"Expedition erledigt"
+            },
+           "GBG":{
+               "IgnoreSet":"Stop-Signal platziert: %0%",
+               "SignalCIgnore":"Signal geändert zu 'Stop' auf: %0%",
+               "FocusSet":"Fokus-Signal platziert: %0%",
+               "SignalCFocus":"Signal geändert zu 'Focus' auf: %0%",
+               "SignalDeleted":"Signal gelöscht: %0%"
+            }
+        }
+    },
+    "incidents":{
+        "methods":{
+            "collectIncidents":{
+                "Collecting":"Ereignisse werden gesammelt...",
+                "Collected":"%0% Ereignisse gesammelt"
+            }
+        }
+    },
+    "gbgSector":{
+        "methods":{
+            "processUpdate":{
+                "ClosedBy":"%0% wurde von %1% geschlossen",
+                "AttackedBy":"%0% wird von %1% angegriffen - Fortschritt: %2%"
+            }
+        }
+    },
+    "gbg":{
+        "methods":{
+            "startAttackByFight":{
+                "ErrorSector":"FEHLER! Kein Sektor ausgewählt"
+            },
+            "attackByFight":{
+                "StopMaxAttrition":"Stop... Maximale Zermürbung erreicht!",
+                "StopLimit":"Stop... Stop-Limit erreicht!",
+                "SuccessAttack":"Angriff erfolgreich (Sector - %0%)",
+                "FailedAttack":"Angriff fehlgeschlagen %0%/4 (Sektor - %1%)",
+                "FailedAttackComplete":"Angriff fehlgeschlagen 4/4 (Sektor - %0%) STOP",
+                "UnkownError":"UNBEKANNTER FEHLER",
+                "AttackStopped":"Angriff abgebrochen"
+            },
+            "startAttackByNegotiation":{
+                "ErrorSector":"FEHLER! Kein Sektor ausgewählt"
+            },
+            "AttackByNegotiation":{
+                "StopMaxAttrition":"Stop... Maximale Zermürbung erreicht!",
+                "StopLimit":"Stop... Stop-Limit erreicht!",
+                "AttackStopped":"Angriff abgebrochen"
+            },
+            "smartAttack":{
+                "Attack":"Smart-Angriff! Sektor: %0% (%1%%) Zerm. - %2%"
+            }
+        }
+    },
+    "gnsolver":{
+        "methods":{
+            "solveNegotiation":{
+                "LowGoods":"FEHLER! UNGENÜGEND GÜTER",
+                "NegDeclined":"Verhandlung abgelehnt",
+                "NegFailed":"Verhandlung fehlgeschlagen",
+                "NegSuccess":"Verhandlung erfolgreich"
+            }
+        }
+    },
+    "gex":{
+        "methods":{
+            "expeditionAttack":{
+                "GexFinished":"Expedition erledigt",
+                "ChangeDiff":"Wechsel Stufe auf %0%",
+                "LevelClosed":"FEHLER! NÄCHSTE LEVEL GESCHLOSSEN",
+                "Solved":"%0%. gelöst",
+                "Failed":"%0%. gescheitert",
+                "NoAttempts":"Keine Versuche",
+                "ReviveFailed":"Armee ersetzen fehlgeschlagen!"
+            },
+            "collectChestPoint":{
+                "Collected":"%0%. %1%"
+            },
+            "collectRelics":{
+                "Collecting":"Sammle Relikte...",
+                "Collected":"%0% Relikte gesammelt",
+                "Reward":"Reliktbelohnung: %0%"
+            },
+            "openLevels":{
+                "TryUnlock":"Versuche GEX-Stufen zu öffnen.Funktioniert nur mit genügend Gütern in der Gildenkasse"
+            }
+        }
+    },
+    "qlooper":{
+        "methods":{
+            "loopQuests":{
+                "CollectReward":"Sammel Questbelohnung - %0%",
+                "Aborting":"Abbrechen - %0%...",
+                "Ready":"Quest - %0% ist bereit"
+            },
+            "doVenusLoop":{
+                "AskNumber":"Wie oft sollen die Kampfquest gemacht werden?\n\n!!! HOHE BANN-GEFAHR, KEINE EXZESSIVE NUTZUNG !!!\n\nGib eine Nummer ein (max 25):"
+            },
+            "loopToVenus":{
+                "DoneCollected":"%0% Punkte mit %1% Kämpfen erhalten",
+                "ToastDone":"%0% Punkte gesammelt",
+                "ToastUnitsFail":"BITTE PRÜFE DEINE ARMEE"
+            },
+            "venusQuestAttack":{
+                "CheckUnits":"BITTE PRÜFE DEINE ARMEE",
+                "ToastFailed":"FEHLER BEIM LOOPEN",
+                "Progress":"Aktueller %0%-Looper Fortschritt: %1%/%2%"
+            },
+            "setupRQLoop":{
+                "GotQuests":"%0% mögliche Quests gefunden"
+            },
+            "getAllRQ":{
+                "GettingQuests":"Suche alle möglichen Wiederholungs-Quests"
+            }
+        }
+    },
+    "gvg":{
+        "methods":{
+            "gvgAttackSector":{
+                "Stopped":"Angriff gestoppt",
+                "Success":"[GVG] Angriff erfolgreich %0%",
+                "Failed":"[GVG] Angriff gescheitert %0%! Ende des Angriffs",
+                "End":"[GVG] Ende des Angriffs %0%"
+            },
+            "deployGVG":{
+                "Success":"[GVG] Neue Armee für %0% - erfolgreich",
+                "Failed":"[GVG] Neue Armme für %0% - gescheitert",
+                "End":"[GVG] Fehler beim Ausführen - STOPP"
+            }
+        }
+    },
+    "exSize":{
+        "methods":{
+            "startExploration":{
+                "Done":"Erkundungstätten erledigt! %0% %1% gesammelt...",
+                "ToastDone":"Fertig! %0% %1% gesammelt"
+            },
+            "attackExploration":{
+                "Working":"Erkundungstätten werden verarbeitet...",
+                "Error":"FEHLER IN ARMEE! BITTE PRÜFEN",
+                "ErrorHead":"FEHLER Erkundungsstätte",
+                "ToastWorkingHead":"VERARBEITE Erkundungsstätte",
+                "ToastWorkingText":"BITTE WARTEN",
+                "ToastFailedHead":"ERKUNDUNGSSTÄTTEN GESAMMELT",
+                "ToastFailedText":"Nichts gesammelt! Bitte neuladen",
+                "Failed":"Erkundungsstätten fehlgeschlagen..."
+            }
+        }
+    },
+    "pvp":{
+        "methods":{
+            "attackOpponent":{
+                "ToastPVPErrorHead":"PVP Arena",
+                "ToastPVPErrorText":"FATALER FEHLER! REPORT BUG",
+                "CheckUnits":"FEHLER! ÜBERPRÜFE ARMEE",
+                "ToastPVPDoneHead":"PVP Arena ERLEDIGT",
+                "ToastPVPDoneText":"Keine Versuche",
+                "GainedPoints":"%0% Punkte erhalten"
+            },
+            "updatePVPArena":{
+                "ToastPVPDoneHead":"PVP Arena ERLEDIGT",
+                "ToastPVPDoneText":"Keine Versuche"
+            }
+        }
+    },
+    "gui":{
+        "questLooper":{
+            "aborting":"\n  Abbrechen...\n"
+        },
+        "citymenu":{
+            "Social":{
+                "Title":"Sozial\n        ",
+                "MotiFriends":"Motiviere Freunde\n        ",
+                "MotiGuild":"Motiviere Gilde\n        ",
+                "MotiNeighbors":"Motiviere Nachbarn\n        ",
+                "VisitTaverns":"Besuche Tavernen\n        ",
+                "Clean":"Lösche Inaktive\n        ",
+                "Invite":"Zufällig einladen\n        "
+            },
+            "Sniping":{
+                "Title":"Sniping\n        ",
+                "Neighbors":"Nachbarn\n        ",
+                "Friends":"Freunde\n        ",
+                "Guild":"Gilde\n        "
+            },
+            "Fighting":{
+                "Title":"Kämpfen\n        ",
+                "FightLooper":"%0% Loop\n        ",
+                "FightLooperNumber":"%0% Loop (%1%)\n        ",
+                "PVP":"PVP Arena\n        ",
+                "PVPNumber":"PVP Arena (%0%)\n        ",
+                "Attack":"Angriff Nachbarn\n        ",
+                "Plunder":"Plünder Nachbarn\n        "
+            },
+            "Utilities":{
+                "Title":"Nützliches\n        ",
+                "CollectAll":"Alles einsammeln\n        ",
+                "ProdBot":"Produktions Bot\n        ",
+                "Trader":"Massenhändler\n        ",
+                "CollectIncidents":"Ereignisse sammeln\n        ",
+                "CollectExplo":"Erkundungsstätten\n        ",
+                "Dashboard":"Dashboard\n        ",
+                "Test":"TEST\n        "
+            },
+            "Settings":{
+                "Title":"Einstellungen\n        "
+            }
+        },
+        "gexmenu":{
+            "Fight":"\n            Kämpfen\n        ",
+            "Stop":"\n      Stop\n    ",
+            "Settings":"Einstellungen\n        ",
+            "Negotiate":"\n            Verhandeln\n        ",
+            "ExtraTurn":"Kaufe extra Verhandlungsversuch",
+            "Unlock":"\n            Stufe freischalten\n        ",
+            "SavedSlots":"Armeeslot: ",
+            "NotFull":"Armee nicht voll!",
+            "Overwritten":"Armeeslot %0% überschrieben",
+            "Army":"Armee %0%"
+        },
+        "gvg":{
+            "Province":"Provinz",
+            "DepSiege":"\n      Belagern\n    ",
+            "DepSiegeRapid":"\nDauerbelagerung\n",
+            "DepDef":"\n      Verteidigung\n    ",
+            "AttackProv":"\n      Angriff\n    ",
+            "DefProv":"\n      Verteidigen\n    ",
+            "Stop":"\n      Stop\n    ",
+            "AlwaysStop":"Nach dem Verlieren stoppen"
+        },
+        "gbg":{
+            "Sector":"Sektor",
+            "Speed":"Geschwindigkeit",
+            "Fight":"\nKampf\n",
+            "Negotiate":"\nVerhandeln\n",
+            "Stop":"\nStop\n",
+            "NormalAttack":"Normaler Angriff",
+            "SmartAttack":"Smarter Angriff",
+            "MinPerc":"Min % Z-Frei",
+            "AtkType":"Angriffstyp",
+            "ListenLog":"Angriffe loggen",
+            "SavedSlots":"Armeeslot: ",
+            "NotFull":"Armee nicht voll!",
+            "Overwritten":"Armeeslot %0% überschrieben",
+            "Settings":"\nEinstellungen\n",
+            "Army":"Armee %0%"
+        },
+        "Battles":"Kämpfe: %0%"
+    }
+}

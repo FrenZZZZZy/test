@@ -1,0 +1,72 @@
+<button class="copycl rounded afaebccdfd">Copy Changelog</button>
+<div id="chDiv">
+    <table id="chTableVersion">
+        <tbody id="chTableheader">
+            <tr>
+                <td style="text-align:center; width:100%">
+                    <h2>CHANGELOG <span id="VersioNumber"></span></h2>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h3 style="color: green;">Added:</h3>
+    <table id="chTableADD">
+        <tbody id="chTableADDBody">
+
+        </tbody>
+    </table>
+    <h3 style="color: red;">Fixed:</h3>
+    <table id="chTableFIX">
+        <tbody id="chTableFIXBody">
+
+        </tbody>
+    </table>
+    <h3 style="color: lightblue;">Changed:</h3>
+    <table id="chTableCHANGED">
+        <tbody id="chTableCHANGEDBody">
+
+        </tbody>
+    </table>
+</div>
+
+<style>
+    #chwnd {
+        width: 650px !important;
+    }
+
+    div#chdiv {
+        overflow: scroll;
+        min-height: auto;
+        max-height: 500px;
+    }
+
+    h4.headerCL {
+        margin: 0px;
+        margin-top: 15px;
+    }
+
+    #chTableADD,
+    #chTableFIX,
+    #chTableCHANGED {
+        margin-left: 15px;
+        margin-bottom: 23px;
+    }
+
+    #chwndBody {
+        max-height: 500px;
+        overflow: auto;
+    }
+
+    a:link.update,
+    a:visited.update {
+        color: Blue;
+        background-color: Silver;
+        text-decoration: underline;
+    }
+
+    a:hover.update {
+        color: #0000ff;
+        background-color: #ffffc0;
+        text-decoration: underline;
+    }
+</style>

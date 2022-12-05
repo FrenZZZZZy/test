@@ -1,0 +1,62 @@
+{
+   "action": {
+      "default_icon": "icon.png"
+   },
+   "content_scripts": [
+      {
+         "include_globs": [
+            "*://*/*"
+         ],
+         "js": [
+            "inject.js"
+         ],
+         "matches": [
+            "*://*/*"
+         ],
+         "run_at": "document_start"
+      }
+   ],
+   "host_permissions": [
+      "https://*.innogamescdn.com/",
+      "https://*.forgeofempires.com/",
+      "*://*/*"
+   ],
+   "description": "ForgeTools is a extension which gives you the ability to simplify actions (like motivating, fighting, negotiating, sniping and more)",
+   "icons": {
+      "128": "icon.png",
+      "16": "icon.png",
+      "48": "icon.png"
+   },
+   "manifest_version": 3,
+   "name": "ForgeTools",
+   "permissions": [
+      "storage",
+      "webRequest",
+      "declarativeNetRequest",
+      "declarativeNetRequestFeedback"
+   ],
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwBNloGsSdlePpMbgAJmrz+cyYMByLEGG/0m1oVzvdXJxoW55cO1oxohqy5lAQuxkQ8deFR7FnP3LWkQ2led8SMBvl3sBvYbNN5ayt49/14Tm5tSt5PHcAPJAxHi56jSZXqLXX6ZRTuW46N4GZCgxwekFZHMmNBTPbIlvYv2U8Q/MF/YrPUULJnqHIOp8zc92QIJ8XwNGpozjuZy3RpWrjHBj9bH0xZcFn/J847XkA5A212mOvN1RqUeY/HdTrbnyVS8/HNhJn3SJI7quZbrG1VATn/DZAjt7+ckCh8JiBGLE/8HU4445hHRa80FzQ5qDcDIx9r1+B69QuYplKMmQfQIDAQAB",
+   "version": "5.0",
+   "web_accessible_resources": [
+      {
+         "resources": [
+            "config/*.json",
+            "config/language/*.json",
+            "html/*.html",
+            "html/settings/*.html",
+            "thirdParty/*.js",
+            "js/*.js",
+            "css/*.css",
+            "images/*.png",
+            "images/*.cur",
+            "negotiation_tables/*.zip"
+         ],
+         "matches": [
+            "<all_urls>"
+         ]
+      }
+   ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self';"
+   }
+}

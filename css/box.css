@@ -1,0 +1,294 @@
+.wb,
+.wbody {
+	scrollbar-color: #281207 #57250c;
+	scrollbar-width: thin;
+}
+
+.whead {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: -29px;
+	left: 7px;
+	right: 5px;
+}
+
+.wb {
+	background: url('../images/box-bg.png') center center repeat;
+	z-index: 100;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-size: 0.9rem;
+	font-weight: 400;
+	color: var(--text-normal);
+	text-shadow: 0 1px 1px var(--black-65);
+	position: absolute !important;
+	text-align: left;
+	padding: 1px;
+	top: 30%;
+	left: 40%;
+	border-color: transparent;
+	border-width: 27px 5px 4px 5px;
+	border-style: solid;
+	border-image-source: url('../images/window.png');
+	border-image-slice: 54 28 28;
+	border-image-width: 54px 28px 28px;
+	border-image-repeat: round;
+	border-image-outset: 0.6;
+	border-radius: 20px;
+	user-select: none;
+}
+
+.wb.closed {
+	border-width: 35px 10px 0 10px;
+	border-style: solid;
+	border-image-source: url('../images/window-closed.png');
+	border-image-slice: 54 28 0 28;
+	border-image-width: 54px 28px 0 28px;
+	border-image-repeat: round;
+	border-image-outset: 0.3;
+	border-radius: 20px;
+	border-bottom: none;
+	background-image: none;
+	height: 3px !important;
+}
+
+
+.oA:before,
+.oA span.arrow,
+.wmini,
+.wclose {
+	background-image:  url('../images/box-sprite.png'), url('../images/box-sprite.png');
+}
+
+.whead span.title {
+	font-weight: 700;
+	display: block;
+	font-size: 1rem;
+	overflow: hidden;
+	white-space: pre;
+	text-overflow: ellipsis;
+}
+
+.whead span.title small em {
+	font-weight: lighter;
+}
+
+.whead span:nth-child(2) {
+	margin-left: auto;
+}
+.whead span.wmini {
+	background-position: -53px -2px, -2px -26px;
+	margin-right: 3px;
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	position: relative;
+}
+
+.whead span.wclose {
+	background-position: -2px -2px, -2px -26px;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	position: relative;
+}
+
+.ot {
+	z-index: 150;
+}
+
+.wmini,
+.wclose,
+.whead:not(span),
+.wb,
+.cursor-default {
+	cursor: url('../images/cursor_default.cur'), auto;
+}
+
+.wmini:hover,
+.wclose:hover,
+.whead:not(span):hover {
+	cursor: url('../images/cursor_hover.cur'), auto;
+}
+
+.wb{
+	min-width: 300px;
+    width: auto;
+    max-height: 500px;
+}
+
+.wg {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	padding: 4px;
+	bottom: -8px;
+	right: -7px;
+	cursor: nwse-resize;
+	background: url('../images/wingrip.png') no-repeat;
+}
+.closed .wg {
+	display:none;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------
+Tabs */
+
+.wbody .tabs ul.horizontal {
+	margin: 5px 0 0 0;
+	padding: 0 0 0 6px;
+	border-bottom: 2px solid var(--border-tab);
+}
+
+.wbody .dark-bg .tabs ul.horizontal, .wbody .tabs ul.horizontal.dark-bg, .wbody .tabs.dark-bg ul.horizontal {
+	padding: 5px 0 0 6px;
+	margin: 0;
+}
+
+.wbody .tabs ul.horizontal li {
+	margin: 0 4px 0 0;
+	padding: 0;
+	display: inline-block;
+	line-height: 33px;
+	position: relative;
+}
+
+.wbody .tabs ul.horizontal li:hover {
+	background-position: 0 -126px;
+}
+
+.wbody .tabs ul.horizontal li.active {
+	background-position: 0 -126px
+}
+
+.wbody .tabs ul.horizontal li a {
+	text-decoration: none;
+	display: block;
+	position: relative;
+	padding: 0 8px;
+	color: var(--text-tab);
+}
+
+.wbody .tabs ul.horizontal li:hover a,
+.wbody .tabs ul.horizontal li.active a {
+	color: var(--text-tab-active);
+}
+
+.wbody .tabs ul.horizontal li a span {
+	display: inline-block;
+	z-index: 20;
+	position: relative;
+	top: 1px;
+}
+
+.wbody .tabs ul.horizontal li.disabled a span {
+	text-decoration: line-through;
+}
+
+.wbody .tabs ul.horizontal li a:before {
+	content: '';
+	position: absolute;
+	background-image:  url('../images/tab.png');
+	background-repeat: no-repeat;
+	background-position: center left;
+	width: 50%;
+	height: 33px;
+	z-index: 1;
+	left: 0;
+	bottom: 0;
+	top: 0;
+}
+
+.wbody .tabs ul.horizontal li a:after {
+	content: '';
+	position: absolute;
+	background-image:  url('../images/tab.png');
+	background-repeat: no-repeat;
+	background-position: center right;
+	width: 50%;
+	height: 33px;
+	z-index: 1;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.wbody .tabs ul.horizontal li:hover a:before,
+.wbody .tabs ul.horizontal li.active a:before,
+.wbody .tabs ul.horizontal li.active:hover a:before,
+.wbody .tabs ul.horizontal li:hover a:after,
+.wbody .tabs ul.horizontal li.active a:after,
+.wbody .tabs ul.horizontal li.active:hover a:after {
+	background-image:  url('../images/tab-active.png');
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+
+.wbody .tabs ul.horizontal li:hover a:after,
+.wbody .tabs ul.horizontal li.active a:after,
+.wbody .tabs ul.horizontal li.active:hover a:after {
+	background-position: center right;
+}
+
+.wbody .tabs > div {
+	position: relative;
+}
+
+/* vertical Tabs */
+.wbody .tabs ul.vertical {
+	width: 120px;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	border-right: 2px solid var(--border-tab);
+}
+
+.wbody .tabs ul.vertical li {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border-style: solid;
+	border-width: 2px 0 2px 2px;
+	border-color: transparent;
+	line-height: 24px;
+	position: relative;
+	right: -2px;
+}
+
+.wbody .tabs ul.vertical li:not(:first-child) {
+	top: -2px;
+}
+
+.wbody .tabs ul.vertical li a {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-decoration: none;
+	padding: 3px 5px;
+	display: block;
+	color: var(--text-normal);
+	position: relative;
+}
+
+.wbody .tabs ul.vertical li.active,
+.wbody .tabs ul.vertical li:hover {
+	border-color: var(--border-tab);
+	border-radius: 3px 0 0 3px;
+}
+
+.wbody .tabs ul.vertical li.active a,
+.wbody .tabs ul.vertical li:hover a {
+	background-color: rgba(40, 18, 7, 0.8);
+	color: var(--text-bright);
+}
+
+.wbody .tabs .sub-tab {
+	margin-left: 120px;
+	border-left: 2px solid #864c1e;
+	padding: 10px;
+	background-color: rgba(40, 18, 7, 0.8);
+}

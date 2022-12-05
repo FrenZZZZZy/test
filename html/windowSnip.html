@@ -1,0 +1,144 @@
+<!-- <button class="copycl rounded afaebccdfd">Copy Snip</button> -->
+<div id="textpBar-##type##">Searching Friends</div>
+<div id="progressbar-##type##">
+    <div id="pbValue-##type##"></div>
+</div>
+<div id="result-##type##" style="display: none;">
+    <table id="snipingTable-##type##" class="sniping sorttable">
+        <thead>
+            <tr class="sorter-header">
+                <th style="text-align:center" class="is-number" data-type="tableBody-##type##">Rank</th>
+                <th style="text-align:center" class="string" data-type="tableBody-##type##">Name</th>
+                <th style="text-align:center" class="case-sensitive" data-type="tableBody-##type##">Great Building</th>
+                <th style="text-align:center" class="is-number" data-type="tableBody-##type##">Progress in %</th>
+                <th style="text-align:center" class="is-number" data-type="tableBody-##type##">Profit in %</th>
+                <th style="text-align:center" class="is-number" data-type="tableBody-##type##">Profit</th>
+                <th style="text-align:center" class="is-number" data-type="tableBody-##type##">Contribution</th>
+                <th style="text-align:center" class="no-sort other-header"></th>
+            </tr>
+        </thead>
+        <tbody id="snipingTableBody-##type##" class="tableBody-##type##">
+
+        </tbody>
+    </table>
+</div>
+
+<style>
+    #textpBar-Friends {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+    }
+
+    #progressbar-Friends {
+        background-color: black;
+        border-radius: 13px;
+        padding: 4px;
+    }
+
+    #progressbar-Friends>div {
+        background-color: orange;
+        width: 0%;
+        height: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    #pbValue-Friends {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+    }
+
+    #textpBar-Neighbor {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+    }
+
+    #progressbar-Neighbor {
+        background-color: black;
+        border-radius: 13px;
+        padding: 4px;
+    }
+
+    #progressbar-Neighbor>div {
+        background-color: orange;
+        width: 0%;
+        height: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    #pbValue-Neighbor {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+    }
+
+
+    #textpBar-ClanMember {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+    }
+
+    #progressbar-ClanMember {
+        background-color: black;
+        border-radius: 13px;
+        padding: 4px;
+    }
+
+    #progressbar-ClanMember>div {
+        background-color: orange;
+        width: 0%;
+        height: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    #pbValue-ClanMember {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+    }
+
+    #result-Neighbor {
+        overflow: auto;
+        max-height: 400px;
+    }
+
+    #result-Friends {
+        overflow: auto;
+        max-height: 400px;
+    }
+
+    #result-ClanMember {
+        overflow: auto;
+        max-height: 400px;
+    }
+
+    tr.sniping {
+        border-bottom: 3px hidden;
+        text-align: center;
+    }
+
+    td.sniping {
+        text-align: center;
+    }
+
+    table.sniping {
+        border-collapse: collapse;
+    }
+
+    table.sortable th {
+        background-color: #57250c;
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    th {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+</style>

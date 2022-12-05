@@ -1,0 +1,45 @@
+<div id="chat">
+    <ul id="chat-messages"></ul>
+
+    <form id="chat-form" method="post">
+        <input type="text" name="messageWSFT" placeHolder="Enter a message..." maxlength="500" autoComplete="off" />
+        <button type="submit" class="sendBtn">Send</button>
+    </form>
+</div>
+
+<style>
+    #chat-messages { list-style-type: none; margin: 0; padding: 0; }
+    #chat-messages > li { padding: 0.5rem 1rem; }
+    #chat-messages > li:nth-child(odd) { background: #efefef; }
+    
+    form#chat-form input,
+    form#chat-form button {
+        border: 1px solid #dfdbdb;
+        background: none;
+        font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+        font-weight: 300;
+        font-size: 18pt;
+        color: white;
+        padding: 8px 15px;
+    }
+    
+    form#chat-form input {
+        width: 40vw;
+    }
+    
+    form#chat-form button {
+        cursor: pointer;
+    }
+    
+    div.message.green {
+        color: #95d592;
+    }
+    
+    div.message.red {
+        color: #d59292;
+    }
+    
+    div.message.blue {
+        color: #9592d5;
+    }
+</style>

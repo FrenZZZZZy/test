@@ -1,0 +1,99 @@
+<div id="textpBarPlunder"></div>
+<div id="progressbarPlunder">
+    <div id="pbValuePlunder"></div>
+</div>
+<div id="resultPlunder" style="display: none;">
+    <table id="PlunderTableSort" class="plunder">
+        <tbody id="PlunderTableHeader">
+            <tr>
+                <td style="text-align:center">
+                    <select id="PlunderSource">
+                        <option value="strategy_points">Forge Points</option>
+                        <option value="goods">Goods</option>
+                    </select>
+                </td>
+                <td style="text-align:center"><button class="PlunderAllButton rounded afaebccdfd">Plunder all</button> </td>
+            </tr>
+        </tbody>
+    </table>
+    <table id="PlunderTable" class="plunder">
+        <thead>
+            <tr class="sorter-header">
+                <th style="text-align:center">Rank</th>
+                <th style="text-align:center">Name</th>
+                <th style="text-align:center">Top-Building</th>
+                <th style="text-align:center">Production (<span id="TextSource">Forge Points</span>)</th>
+                <th style="text-align:center" title="If there is no Era displayed it means that its not the building with the most goods by that player">Era (Goods available)</th>
+                <th style="text-align:center"></th>
+            </tr>
+        </thead>
+        <tbody id="PlunderTableBody">
+
+        </tbody>
+    </table>
+</div>
+
+<style>
+    #textpBarPlunder{
+        text-align: center;
+        color:white;
+        font-weight: bold;
+    }
+    
+    #progressbarPlunder {
+        background-color: black;
+        border-radius: 13px;
+        padding: 4px;
+      }
+      
+      #progressbarPlunder>div {
+        background-color: orange;
+        width: 0%;
+        height: 20px;
+        border-radius: 5px;
+        text-align: center;
+      }
+    
+      #pbValuePlunder{
+        text-align: center;
+        color:white;
+        font-weight: bold;
+      }
+    
+    #resultPlunder{
+      overflow:auto;
+      max-height: 400px;
+    }
+    
+    tr.plunder{
+        border-bottom: 3px hidden;
+        text-align: center;
+      }
+      
+      td.plunder{
+        text-align: center;
+      }
+      
+      table.plunder{
+        border-collapse: collapse;
+      }
+      
+      table.sortable th {
+        background-color:#57250c;
+        color:#ffffff;
+        font-weight: bold;
+        cursor: url('../images/cursor_hover.cur'), auto;
+      }
+      
+      th {
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+    
+    tbody#PlunderTableBody tr td.col-3{
+      grid-column: span 3/span 3;
+    }
+    tbody#PlunderTableBody tr td.col-2{
+      grid-column: span 2/span 2;
+    }
+</style>

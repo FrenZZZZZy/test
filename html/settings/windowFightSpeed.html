@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/css/selectize.bootstrap4.min.css" referrerpolicy="no-referrer" />
+<div id="FightSpeed">
+    <table id="FightSpeedTable">
+        <tbody id="FightSpeedTableBody">            
+            </tr>
+            <tr>
+                <td style="width:100px">Display Text:</td>
+                <td>
+                    <input id="FightSpeedText" class="float-left rounded ml-1 fbcbcfcd">
+                </td>
+            </tr>
+            <tr>
+                <td style="width:100px">Min Delay (in ms):</td>
+                <td>
+                    <input id="FightSpeedMinDelay" type="number" value="1000" class="float-left rounded ml-1 fbcbcfcd">
+                </td>
+            </tr>
+            <tr>
+                <td style="width:100px">Max Delay (in ms):</td>
+                <td>
+                    <input id="FightSpeedMaxDelay" type="number" value="2000" class="float-left rounded ml-1 fbcbcfcd">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn-default" id="addFightSpeed">Create Speed</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Saved Fight Speeds</td>
+                <td>
+                    <input readonly class="float-left rounded ml-1 fbcbcfcd" style="width: 260px;" id="SavedFightSpeeds" />
+                </td>
+            </tr>
+            <tr>
+                <td style="width:100px"></td>
+                <td>
+                    <button class="btn-default" id="clearFightSpeed">Clear all</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

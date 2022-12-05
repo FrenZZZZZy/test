@@ -1,0 +1,140 @@
+<div class="lds-ring">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<table id="RQTableHeader">
+    <tbody id="RQTableHeaderBody">
+        <tr>
+            <td style="text-align:center">
+                <select id="RQSlotCount">
+                    <option value="3">3 Slots</option>
+                    <option value="2">2 Slots</option>
+                    <option value="1">1 Slots</option>
+                </select>
+            </td>
+            <td style="text-align:center; color:rgb(255, 61, 61)">SAVES WHILE CHANGING (ONLY SAVE ONE QUEST TO ONE SLOT)
+            </td>
+            <td style="text-align:right;" title="Filled Slots:" class="SlotsSelected"></td>
+        </tr>
+    </tbody>
+</table>
+<table id="RQTable" class="rq" style="display:none;">
+    <thead>
+        <tr>
+            <th style="text-align:center; width:10%"></th>
+            <th style="text-align:center; width:10%">Slot</th>
+            <th style="text-align:center; width:30%">Name</th>
+            <th style="text-align:center; width:50%">Condition</th>
+        </tr>
+    </thead>
+    <tbody id="RQTableBody">
+
+    </tbody>
+</table>
+
+<style>
+    tr.rq {
+        border-bottom: 3px hidden;
+        text-align: center;
+    }
+
+    td.rq {
+        text-align: center;
+    }
+
+    table.rq {
+        border-collapse: collapse;
+    }
+
+    th {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    #ftRQLoop.wb.open.ot {
+        min-height: 150px;
+    }
+
+    tbody#RQTableBody tr {
+        border-bottom: solid 1px;
+    }
+
+    #RQTable .th.col-4 {
+        grid-column: span 4 / span 4;
+    }
+
+    #RQTable .th.col-3 {
+        grid-column: span 3 / span 3;
+    }
+
+    #RQTable .th.col-2 {
+        grid-column: span 2 / span 2;
+    }
+
+    tbody#RQTableBody tr td.col-4 {
+        grid-column: span 4 / span 4;
+    }
+
+    tbody#RQTableBody tr td.col-3 {
+        grid-column: span 3 / span 3;
+    }
+
+    tbody#RQTableBody tr td.col-2 {
+        grid-column: span 2 / span 2;
+    }
+
+    #ftRQLoopBody {
+        overflow: auto;
+        max-height: 500px;
+    }
+
+    .lds-ring {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+    }
+
+    .lds-ring div {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border: 8px solid #cef;
+        border-radius: 50%;
+        animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        border-color: #cef transparent transparent transparent;
+    }
+
+    .lds-ring div:nth-child(1) {
+        animation-delay: -0.45s;
+    }
+
+    .lds-ring div:nth-child(2) {
+        animation-delay: -0.3s;
+    }
+
+    .lds-ring div:nth-child(3) {
+        animation-delay: -0.15s;
+    }
+
+    @keyframes lds-ring {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>

@@ -1,0 +1,109 @@
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" media=”screen” />
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
+<div id="bulktrader">
+    <div id="TradeRate" class="size-large center-text bold-text red-text">
+        !!! CURRENT TRADE PACKS: ##offer## : ##need## !!!
+    </div>
+    <table id="tblTrader" style="width: 100%;">
+        <tr>
+            <th colspan="3" class="headingTrades">Offer</th>
+            <th class="noBorder">Clan Only:<input id="TradeClanOnly" type="checkbox" class="rounded ml-1 fbcbcfcd"></th>
+            <th colspan="3" class="headingTrades">Needed</th>
+        </tr>
+        <tr>
+            <td class="noBorder">
+              <select name="offer_era" id="offer_era">
+              </select>
+            </td>
+            <td class="noBorder">
+              <select name="offer_good" id="offer_good">
+                <option value="-1">Select Era first</option>
+              </select>
+            </td>
+            <td class="noBorder"><input type="number" placeholder="How many Goods should be traded" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" id="offer_value"></td>
+            <td class="noBorder size-large center-text">&rarr;</td>
+            <td class="noBorder">
+              <select name="need_era" id="need_era">
+              </select>
+            </td>
+            <td class="noBorder">
+              <select name="need_good" id="need_good">
+                <option value="-1">Select Era first</option>
+              </select>
+            </td>
+            <td>
+                <button class="createTrades rounded afaebccdfd">Create Trade</button>
+            </td>
+        </tr>
+    </table>
+    <div class="borderTest">
+        <table id="ownTradesTable" style="width: 100%;" class="table table-bordered table-striped" >
+            <thead>
+                <tr>
+                    <th colspan="3" class="headingTrades">Offer</th>
+                    <th class="noBorder"></th>
+                    <th colspan="3" class="headingTrades">Needed</th>
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                
+            </tbody>
+        </table>   
+    </div>
+</div>
+
+<style>
+    #bulktrader > table:not(.noBorder),#bulktrader >  th:not(.noBorder),#bulktrader >  td:not(.noBorder){
+        border:1px solid black;
+    }
+    .borderTest{
+        border:2px solid red;
+    }
+    .headingTrades{
+        font-size: x-large;
+        text-align: center;
+    }
+    .size-large{
+        font-size: x-large;
+    }
+    .center-text{
+        text-align: center;
+    }
+    .red-text{
+        color:red;
+    }
+    .bold-text{
+        font-weight: bolder;
+    }
+
+    .paging-nav {
+        text-align: center;
+        padding-top: 2px;
+      }
+      
+      .paging-nav a {
+        margin: auto 1px;
+        text-decoration: none;
+        display: inline-block;
+        padding: 1px 7px;
+        background: #91b9e6;
+        color: white;
+        border-radius: 3px;
+      }
+      
+      .paging-nav .selected-page {
+        background: #187ed5;
+        font-weight: bold;
+      }
+      
+      .paging-nav,
+      #ownTradesTable {
+        width: 400px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+      }
+
+</style>
+<script>
+    
+</script>

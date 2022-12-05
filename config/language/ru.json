@@ -1,0 +1,371 @@
+{
+    "units":{
+        "methode":{
+            "updateTemplate":{
+                "UnitsReplaced":"Армия заменена"
+            },
+            "reviveUnits":{
+                "NotFull":"Ошибка. Состав армии не полный!",
+                "NoUnits":"Ошибка. Нет юнитов для шаблона!"
+            }
+        }
+    },
+    "motivate":{
+        "methods":{
+            "buff":{
+                "Motivating":"Помощь...",
+                "MotivSuccess":"Помощь выполнена",
+                "MotivateNoOne":"Помогать некому",
+                "MotivateProgress":"Готово %0%/%1% blocks"
+            }
+        }
+    },
+    "friendtavern":{
+        "methods":{
+            "deleteFriends":{
+                "Searching":"Поиск неактивных друзей...",
+                "Removed": "Удалено %0% неактивных друга"
+            },
+            "addNewFriends":{
+                "RandInvited": "Приглашение случайных игроков в список друзей"
+            },
+            "visitTaverns":{
+                "Visiting":"Посещение таверн...",
+                "Visitied":"Таверны посещены",
+                "NoVisitable":"Нет таверн для посещения"
+            }
+        }
+    },
+    "bghelper":{
+        "methods":{
+            "bgHelper":{
+                "CollectionHelperTitle":"Помощник сбора",
+                "ProcessingCityData":"Обработка данных города",
+                "ProdBotRunning":"!!!! ПРОИЗВОДСТВЕННЫЙ БОТ РАБОТАЕТ !!!!"
+            },
+            "showProdBot":{
+                "ProdBotTitle":"Производственный Бот"
+            },
+            "collectUseBlueGalaxy":{
+                "SomthingWrong":"Что-то пошло не так!<br>Пожалуйста, перезагрузите игру!",
+                "AllCollected":"ВСЁ СОБРАНО"
+            },
+            "bgRecalc":{
+                "NoBuildings":"Нет зданий для сбора",
+                "TutorialText1":"\n------------- РУКОВОДСТВО Синяя Галактика помощник -------------\nв процессе доработки\n------------- Страница 1 из 3 -------------\n",
+                "TutorialText2":"\n------------- РУКОВОДСТВО Синяя Галактика помощник -------------\nв процессе доработки\n------------- Страница 2 из 3 -------------\n",
+                "TutorialText3":"\n------------- РУКОВОДСТВО Синяя Галактика помощник -------------\nв процессе доработки\n------------- Страница 3 из 3 -------------\n"
+            }
+        }
+    },
+    "plunder":{
+        "methods":{
+            "processNeihborData":{
+                "ProcessingNeighborHood":"Обработка соседей (%0%)"
+            },
+            "buildPlunderWindow":{
+                "PlunderHelperTitle":"Помощник грабежа",
+                "ProcessingNeighborHood":"Обработка соседей",
+                "Action0":"Атака и Грабёж",
+                "Action1":"Грабёж",
+                "NothingToPlunder":"Нечего грабить"
+            },
+            "clickPlunderNeighbor":{
+                "Protection":"Игрок активировал защиту города",
+                "ErrorReload":"Ошибка при атаке... пожалуйста перезагрузите",
+                "Lost":"Поражение! Не возможно ограбить",
+                "UpdateUnits":"Пожалуйста обновите армию атаки"
+            },
+            "plunderNeighbor":{
+                "PreventGalata":"Галатская башня предотвратила ограбление %0%'s %1%",
+                "PlunderSuccess":"Ограблено %0%'s %1%",
+                "Nothing":"Ничего не разграблено..."
+            }
+        }
+    },
+    "sniper":{
+        "methods":{
+            "searchSnipGB":{
+                "SnipeWindowTitle": "Бегемот - %0%"
+            },
+            "GetGBs":{
+                "Getting":"Обработка ",
+                "GetGBOverview":"Получить обзор ВС",
+                "NoSnip":"Не найдено прибыльных ВС",
+                "Sniped":"Забегемочено %0%'s %1% with %2% СО (%3% СО Прибыль)",
+                "ProfitGone":"Прибыль! (#%0% %1% %2%)"
+            },
+            "getGBDetails":{
+                "GetGBDetails":"Получить обзор для каждого ВС"
+            },
+            "findProfitableGBs":{
+                "SearchProfit":"Искать прибыльные ВС"
+            },
+            "parseGBDetails":{
+                "ParseGBDetails":"Получение подробно ВС"
+            },
+            "attackNeighbors":{
+                "Attacking":"Началась атака соседей..."
+            },
+            "attackNeighbor":{
+                "Failed":"Неудачная атака %0% - Атака остановлена",
+                "Success":"Успешная атака %0%",
+                "Lost":"Поражение %0%",
+                "Error":"Атака остановлена - ошибка (%0%)",
+                "Finish":"Атака соседей завершена"
+            }
+        }
+    },
+    "addHandler":{
+        "created":{
+            "GEX":{
+                "GexFinished":"Экспедиция завершена"
+            },
+           "GBG":{
+               "IgnoreSet":"Метка игнорировать установлена: %0%",
+               "SignalCIgnore":"Метка изменилась на 'Игнорировать' at: %0%",
+               "FocusSet":"Метка установлена: %0%",
+               "SignalCFocus":"Метка изменилась на 'Бить' at: %0%",
+               "SignalDeleted":"Метка удалена: %0%"
+            }
+        }
+    },
+    "incidents":{
+        "methods":{
+            "collectIncidents":{
+                "Collecting":"Сбор проишествий...",
+                "Collected":"Собрано %0% проишествий"
+            }
+        }
+    },
+    "gbgSector":{
+        "methods":{
+            "processUpdate":{
+                "ClosedBy":"%0% закрыто %1%",
+                "AttackedBy":"%0% атаковано %1% - Прогресс: %2%"
+            }
+        }
+    },
+    "gbg":{
+        "methods":{
+            "startAttackByFight":{
+                "ErrorSector":"Ошибка! Выберите сектор"
+            },
+            "attackByFight":{
+                "StopMaxAttrition":"Остановка... Получено макс. истощение!",
+                "StopLimit":"Остановка... Достигнут макс. лимит!",
+                "SuccessAttack":"Успешная атака (Сектор - %0%)",
+                "FailedAttack":"Поражение %0%/4 (Сектор - %1%)",
+                "FailedAttackComplete":"Поражение 4/4 (Сектор - %0%) Остановлено",
+                "UnkownError":"Неизвестная ошибка",
+                "AttackStopped":"Атака остановлена"
+            },
+            "startAttackByNegotiation":{
+                "ErrorSector":"Ошибка. Выберите сектор"
+            },
+            "AttackByNegotiation":{
+                "StopMaxAttrition":"Остановка... Получено макс. истощение!",
+                "StopLimit":"Остановка... Достигнут макс. лимит!",
+                "AttackStopped":"Атака остановлена"
+            },
+            "smartAttack":{
+                "Attack":"Умная атака! Сектор: %0% (%1%%) Истощение - %2%"
+            }
+        }
+    },
+    "gnsolver":{
+        "methods":{
+            "solveNegotiation":{
+                "LowGoods":"Ошибка. Недостаточно товаров для переговоров",
+                "NegDeclined":"Переговоры отменены",
+                "NegFailed":"Переговоры проиграны",
+                "NegSuccess":"Переговоры завершены"
+            }
+        }
+    },
+    "gex":{
+        "methods":{
+            "expeditionAttack":{
+                "GexFinished":"Экспедиция завершена",
+                "ChangeDiff":"Сложность поменялась на %0%",
+                "LevelClosed":"Ошибка! Следующий уровень закрыт",
+                "Solved":"Кочка - %0% пройдена",
+                "Failed":"Кочка - %0% провалена",
+                "NoAttempts":"Нет больше попыток",
+                "ReviveFailed":"Не удалось заменить юнит - проверьте армию"
+            },
+            "collectChestPoint":{
+                "Collected":"Кочка - %0%. Награда - %1%"
+            },
+            "collectRelics":{
+                "Collecting":"Сбор реликвий...",
+                "Collected":"Собрано %0% реликвий",
+                "Reward":"Приз реликвий: %0%"
+            },
+            "openLevels":{
+                "TryUnlock":"Попробовать открыть уровни экспедиции. Работает при достаточном количестве товара в казне"
+            }
+        }
+    },
+    "qlooper":{
+        "methods":{
+            "loopQuests":{
+                "CollectReward":"Собранная награда за квест - %0%",
+                "Aborting":"Отменено - %0%...",
+                "Ready":"Квест - %0% выполнен"
+            },
+            "doVenusLoop":{
+                "AskNumber":"Как часто должен запускаться круговой квест?\n\n!!! ВЫСОКИЙ РИСК БАНА ПРИ НАРУШЕНИИ !!!\n\nВведите номер (макс. 25)"
+            },
+            "loopToVenus":{
+                "DoneCollected":"Собрано %0% очков за %1% боёв",
+                "ToastDone":"Собрано очков %0%",
+                "ToastUnitsFail":"Пожалуйста проверьте вашу армию"
+            },
+            "venusQuestAttack":{
+                "CheckUnits":"Ошибка! Проверьте армию",
+                "ToastFailed":"НЕ УДАЛОСЬ ПРОДОЛЖИТЬ КРУГОВОЙ",
+                "Progress":"Текущий %0%-круг Прогресс: %1%/%2%"
+            },
+            "setupRQLoop":{
+                "GotQuests":"Получено %0% возможных круговых"
+            },
+            "getAllRQ":{
+                "GettingQuests":"Получение всех доступных круговых"
+            }
+        }
+    },
+    "gvg":{
+        "methods":{
+            "gvgAttackSector":{
+                "Stopped":"Атака остановлена",
+                "Success":"[GVG] Завершено атак %0%",
+                "Failed":"[GVG] Атака провалена %0%! Атака завершена",
+                "End":"[GVG] Атака завершена %0%"
+            },
+            "deployGVG":{
+                "Success":"[GVG] Новая армия %0% - готово",
+                "Failed":"[GVG] Новая армия %0% - провалено",
+                "End":"[GVG] Exception on deploying - ОСТАНОВЛЕНО"
+            }
+        }
+    },
+    "exSize":{
+        "methods":{
+            "startExploration":{
+                "Done":"Карта компаний выполнено! Собрано %0% %1%...",
+                "ToastDone":"ВЫПОЛНЕНО! СОБРАНО И ПЕРЕЗАПУЩЕНО (%0% %1%)"
+            },
+            "attackExploration":{
+                "Working":"Карта компаний работает... ждите...",
+                "Error":"Ошибка в армии! Пожалуйста обновите",
+                "ErrorHead":"Не выполнено Карта компаний",
+                "ToastWorkingHead":"Работает Карта компаний",
+                "ToastWorkingText":"Пожалуйста подождите",
+                "ToastFailedHead":"Карта компаний собрано",
+                "ToastFailedText":"Ничего не собрано! Перезагрузить снова",
+                "Failed":"Карта компаний не удалось..."
+            }
+        }
+    },
+    "pvp":{
+        "methods":{
+            "attackOpponent":{
+                "ToastPVPErrorHead":"PVP Арена",
+                "ToastPVPErrorText":"Фатальная Ошибка!!! Сообщить об ошибке",
+                "CheckUnits":"ОШИБКА, Пожалуста проверьте армию",
+                "ToastPVPDoneHead":"PVP Арена ЗАВЕРШЕНА",
+                "ToastPVPDoneText":"Попыток не осталось",
+                "GainedPoints":"Набрано %0% очков"
+            },
+            "updatePVPArena":{
+                "ToastPVPDoneHead":"PVP Арена ЗАВЕРШЕНА",
+                "ToastPVPDoneText":"Попыток не осталось"
+            }
+        }
+    },
+    "gui":{
+        "questLooper":{
+            "aborting":"\n  Прерывание...\n"
+        },
+        "citymenu":{
+            "Social":{
+                "Title":"Социальное\n        ",
+                "MotiFriends":"Помочь друзьям\n        ",
+                "MotiGuild":"Помочь согильдийцам\n        ",
+                "MotiNeighbors":"Помочь соседям\n        ",
+                "VisitTaverns":"Посетить таверны\n        ",
+                "Clean":"Удалить неактивных друзей\n        ",
+                "Invite":"Пригласить случайно\n        "
+            },
+            "Sniping":{
+                "Title":"Бегемот\n        ",
+                "Neighbors":"Соседи\n        ",
+                "Friends":"Друзья\n        ",
+                "Guild":"Гильдия\n        "
+            },
+            "Fighting":{
+                "Title":"Бои\n        ",
+                "FightLooper":"%0% Круговые\n        ",
+                "FightLooperNumber":"%0% Круг (%1%)\n        ",
+                "PVP":"PVP Арена\n        ",
+                "PVPNumber":"PVP Арена (%0%)\n        ",
+                "Attack":"Атаковать соседей\n        ",
+                "Plunder":"Грабить соседей\n        "
+            },
+            "Utilities":{
+                "Title":"Утилиты\n        ",
+                "CollectAll":"Собрать всё\n        ",
+                "ProdBot":"Продуктовый бот\n        ",
+                "Trader":"Торговец (рынок)\n        ",
+                "CollectIncidents":"Собрать события\n        ",
+                "CollectExplo":"Собрать исследования\n        ",
+                "Dashboard":"Панель\n        ",
+                "Test":"ТЕСТ\n        "
+            },
+            "Settings":{
+                "Title":"Настройки\n        "
+            }
+        },
+        "gexmenu":{
+            "Fight":"\n            Бой\n        ",
+            "Stop":"\n      Стоп\n    ",
+            "Settings":"Настройки\n        ",
+            "Negotiate":"\n            Переговор\n        ",
+            "ExtraTurn":"Купить дополнительную попытку (Переговор) в таверне",
+            "Unlock":"\n            разблокировать уровень\n        ",
+            "SavedSlots":"Сохранить армию в слот: ",
+            "NotFull":"Не полная армия!",
+            "Overwritten":"Армия в слоте %0% перезаписана",
+            "Army":"Армия %0%"
+        },
+        "gvg":{
+            "Province":"Провинция",
+            "DepSiege":"\n      Установить осаду\n    ",
+            "DepSiegeRapid":"\nУстановить осаду быстро\n",
+            "DepDef":"\n      Установить защиту\n    ",
+            "AttackProv":"\n      Атака провинции\n    ",
+            "DefProv":"\n      Защита провинции\n    ",
+            "Stop":"\n      Стоп\n    ",
+            "AlwaysStop":"Всегда останавливаться после поражения"
+        },
+        "gbg":{
+            "Sector":"Сектор",
+            "Speed":"Скорость",
+            "Fight":"\nБой\n",
+            "Negotiate":"\nПереговоры\n",
+            "Stop":"\nСтоп\n",
+            "NormalAttack":"Обычная атака",
+            "SmartAttack":"Умная атака",
+            "MinPerc":"Минимум % лагеря",
+            "AtkType":"Тип атаки",
+            "ListenLog":"Лист/лог атак",
+            "SavedSlots":"Сохранить армию в слот: ",
+            "NotFull":"Не полная армия!",
+            "Overwritten":"Армия в слоте %0% перезаписана",
+            "Settings":"\nНастройки\n",
+            "Army":"Армия %0%"
+        },
+        "Battles":"Бои: %0%"
+    }
+}

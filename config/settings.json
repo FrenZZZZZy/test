@@ -1,0 +1,346 @@
+[
+	{
+		"version": 2
+	},
+	{
+		"id": "AutoNegotiation",
+		"name": "Auto Negotiation",
+		"title": "Toggle Auto Negotiation",
+		"description": "Toogle 'Auto Negotiation'-Helper",
+		"status": true,
+		"group": "Negotiating",
+		"requieredModules":["addhandler","startup","negotiationhelper","negsolver"],
+		"sort": 1
+	},
+	{
+		"id": "MinNegoGoods",
+		"name": "Minimum Goods",
+		"title": "Minimum Auto-Negotiating Goods",
+		"description": "Set minimum goods required to do auto-negotiation",
+		"callback":"minGoodNegotiation",
+		"endCallback": "initEventsMinGoodNegotiation",
+		"value":300,
+		"group": "Negotiating",
+		"requieredModules":["addhandler","startup","negotiationhelper","negsolver"],
+		"sort": 2
+	},
+	{
+		"id": "ShowAbortText",
+		"name": "Show Abort Text",
+		"title": "Quest Looper",
+		"description": "Show the Quest which gets aborted in the Log",
+		"status": false,
+		"group": "Utilities",
+		"requieredModules":["qlooper"],
+		"sort": 3
+	},
+	{
+		"id": "RQSetup",
+		"name": "Setup RQ-Loop",
+		"title": "RQ-Loop Setup",
+		"description": "Setup Quests for RQ-Looper",
+		"button": "setupRQLoop",
+		"buttonText" :"Start Setup",
+		"group": "Utilities",
+		"requieredModules":["qlooper"],
+		"sort": 4
+	},
+	{
+		"id": "SlotCounter",
+		"value": "3"
+	},
+	{
+		"id":"SelectedQuests",
+		"value":[]
+	},
+	{
+		"id": "GBGSmartAttack",
+		"name": "Smart Attack",
+		"title": "Smart Attack Settings",
+		"description": "Change Settings for GBG SmartAttack",
+		"callback": "getSettingElements",
+		"endCallback": "initEventsGBGSmartAttack",
+		"group": "Fighting",
+		"requieredModules":["gbg"],
+		"sort": 1
+	},
+	{
+		"id":"MaxProgress",
+		"value":150
+	},
+	{
+		"id":"MaxAttrition",
+		"value":50
+	},
+	{
+		"id":"IgnoreStop",
+		"value":false
+	},
+	{
+		"id":"FollowFocus",
+		"value":false
+	},
+	{
+		"id": "UseOldLooper",
+		"name": "Old RQ-Loop",
+		"title": "Use old RQ-Looper",
+		"description": "Even if I don't recommend it, you can check here if you want to use the old RQ-Looper (reload required)",
+		"status": false,
+		"group": "Utilities",
+		"requieredModules":["qlooper"],
+		"sort": 6
+	},
+	{
+		"id": "SavedRQLooperQuets",
+		"name": "Saved Quests",
+		"title": "Saved Quests for RQ-Looper",
+		"description": "Here are those Quests which will the RQ-Looper use in each slot",
+		"callback": "getRQSlotsSaved",
+		"endCallback": "initEventsRQLooperSlotsSaved",
+		"group": "Utilities",
+		"requieredModules":["qlooper"],
+		"sort": 2
+	},
+	{
+		"id": "MinHealth",
+		"name": "Min Health",
+		"title": "Min Unit Health",
+		"description": "Set the minimum health a Unit should have to be choosen by the script for replacing. It will always use units with most health",
+		"callback":"minUnitHealthFN",
+		"endCallback": "initEventsMinUnitHealth",
+		"value":10,
+		"group": "Fighting",
+		"requieredModules":["units"],
+		"sort": 2
+	},
+	{
+		"id": "MotivateRules",
+		"name": "Motivating",
+		"title": "Motivation Rules",
+		"description": "You can select if the script should only motivate a small group of neighbors (top/bottom x neighbors). Everyone else will not get motivated<br/><br/>If number is equal to -1, all neighbors will get motivated!!",
+		"callback": "buildMotivateRules",
+		"endCallback": "initEventsMotivateRules",
+		"group": "Social",
+		"requieredModules":["motivate"],
+		"sort": 1
+	},
+	{
+		"id":"NeighborNumber",
+		"value":-1
+	},
+	{
+		"id":"MotivateDirection",
+		"value":"top"
+	},
+	{
+		"id": "SnipingOption",
+		"name": "Snip Options",
+		"title": "Sniping Options",
+		"description": "You can filter the Sniping Output to show only GBs with min profit and/or max investment",
+		"callback": "buildSnipOption",
+		"endCallback": "initEventsSnipOption",
+		"group": "Social",
+		"requieredModules":["sniper"],
+		"sort": 2
+	},
+	{
+		"id":"minProfitPerc",
+		"value":1
+	},
+	{
+		"id":"maxInvest",
+		"value":3000
+	},
+	{
+		"id": "AttackNeighborRules",
+		"name": "Neighbors",
+		"title": "Attacking Neighbor Rules",
+		"description": "You can select if the script should only attack a small group of neighbors (top/bottom x neighbors). Everyone else will not get attacked<br/><br/>If number is equal to -1, all neighbors will get attacked!!",
+		"callback": "buildAttackNeighborRules",
+		"endCallback": "initEventsAttackNeighborRules",
+		"group": "Fighting",
+		"requieredModules":["plunder"],
+		"sort": 3
+	},
+	{
+		"id":"AttackNeighborNumber",
+		"value":-1
+	},
+	{
+		"id":"AttackDirection",
+		"value":"top"
+	},
+	{
+		"id": "PVPMode",
+		"name": "PVP Arena V1",
+		"title": "PVP Arena Mode",
+		"description": "You can choose which opponent the script should attack in pvp arena till the attempts are done!!",
+		"callback": "buildPVPMode",
+		"endCallback": "initEventsPVPMode",
+		"group": "Fighting",
+		"requieredModules":["pvp"],
+		"sort": 4
+	},
+	{
+		"id":"OpponentStrength",
+		"value":"medium"
+	},
+	{
+		"id": "MenuSlide",
+		"name": "Menu Slide",
+		"title": "Menu Slide Direction",
+		"description": "You can choose in which direction the menu should slide to!!",
+		"callback": "buildMenuSlide",
+		"endCallback": "initEventsMenuSlide",
+		"group": "General",
+		"sort": 2
+	},
+	{
+		"id":"menuSlideDirection",
+		"value":"right"
+	},
+	{
+		"id":"MenuTopPosition",
+		"value":"73vh"
+	},
+	{
+		"id":"MenuLeftPosition",
+		"value":"2px"
+	},
+	{
+		"id":"MenuHidden",
+		"value":false
+	},
+	{
+		"id": "LanguageSelection",
+		"name": "Language",
+		"title": "Choose Language",
+		"description": "You can change the language of the UI and Log (History) to a supported Language!<br/><br/>You want to add your Language? Contact the admin in Discord!",
+		"callback": "buildLanguageSelection",
+		"endCallback": "initEventsLanguageSelection",
+		"group": "General",
+		"sort": 3
+	},
+	{
+		"id":"Language",
+		"value":"en"
+	},
+	{
+		"id":"GBGSpeed",
+		"value":"2000"
+	},
+	{
+		"id": "TradePacks",
+		"name": "Trade Packs",
+		"title": "Set Trade Packs",
+		"description": "Change the Trade Pack which should be used for the Bulk Trader!<br/>All Trades will be split into these Packs if possible<br/><br/>A good (default) Trade Pack is 200 : 350 (Offer : Needed)",
+		"callback": "buildTradePacksWindow",
+		"endCallback": "initEventsTradePacksWindow",
+		"group": "Utilities",
+		"requieredModules":["trader"],
+		"sort": 1
+	},
+	{
+		"id":"OfferPack",
+		"value":"200"
+	},
+	{
+		"id":"NeedPack",
+		"value":"350"
+	},
+	{
+		"id":"FightSpeed",
+		"name": "Fight Speed",
+		"title": "Configure Fight Speed",
+		"description":"Add your Custom Fight Speeds here. If none are created, only a default (0 Seconds) will be shown!",
+		"callback":"buildFightSpeedWindow",
+		"endCallback": "initEventsFightSpeedWindow",
+		"group":"Fighting",
+		"requieredModules":["gbg","gvg"],
+		"sort": 5
+	},
+	{
+		"id":"SavedFightSpeed",
+		"value":[{
+			"value": 0,
+			"text": "0s (fastest)",
+			"minSec": 0,
+			"maxSec": 0,
+			"$order": 1
+		}, {
+			"value": 1,
+			"text": "1s - 2s (fast)",
+			"minSec": 1000,
+			"maxSec": 2000,
+			"$order": 2
+		}, {
+			"value": 2,
+			"text": "2s - 3s (slow)",
+			"minSec": 2000,
+			"maxSec": 3000,
+			"$order": 3
+		}]
+	},
+	{
+		"id":"GVGAlertList",
+		"hidden_": true,
+		"hidden_EA": true,
+		"name": "GVG Alert",
+		"title": "Subscribe to GVG Alerts",
+		"description":"Select which Provinces you want to subscribe to get alerts if someone is attacking your sector",
+		"callback":"buildGVGAlertWindow",
+		"endCallback": "initEventsGVGAlert",
+		"group":"Fighting",
+		"requieredModules":["gvg"],
+		"sort": 6
+	},
+	{
+		"id":"SavedAlertSubs",
+		"value":[]
+	},
+	{
+		"id": "UseSafetyMode",
+		"name": "Use Safety Mode",
+		"title": "Use Safety Mode for requests",
+		"description": "This option adds the possibility to use a safety mode for all requests which can be slowed down!<br/>Following are:<br/>-REPLACING ARMY<br/>-Motivation<br/>-Tavern visiting<br/>-Sniping<br/>-Plundering<br/>-Quest Looper<br/>-PVP-Arena<br/>-Neighbor attacking<br/>-Collect Incidents <br/>-Exploration (Fighting and Negotiating)",
+		"status": true,
+		"group": "General",
+		"sort": 1
+	},
+	{
+		"id": "UseWaveDelay",
+		"hidden_": true,
+		"name": "Use Wave Delay",
+		"title": "Use 2. Wave Delay for Fighting",
+		"description": "If activated the delay between Wave 1 and Wave 2 will be set to 500ms, else the second Wave will be instantly fight",
+		"status": false,
+		"group": "Fighting",
+		"requieredModules":["gbg","gex","gvg","exsite"],
+		"sort": 7
+	},
+	{
+		"id": "NoMercyMode",
+		"hidden_": true,
+		"name": "No Mercy",
+		"title": "Use No Mercy Mode",
+		"description": "!!ATTENTION!!<br><br>This is the 'NoMercy Mode'<br>The Script will perform an amount of fights (as fast as possible) before replacing army!<br>THIS HAS A VERY HIGH BAN RISK! USE IT ON YOUR OWN RISK",
+		"status": false,
+		"group": "Fighting",
+		"requieredModules":["gbg","gvg"],
+		"sort": 8
+	},
+	{
+		"id": "GVGUnitEraSetup",
+		"hidden_": true,
+		"hidden_EA": true,
+		"name": "GVG Setup",
+		"title": "GVG Unit/Era Setup",
+		"description": "You can create/modify/delete 3 templates (Attack/Defending, deploy defence or deploy siege) for each GVG Province (Iron Age,...)<br>If nothing found OR you deactivate it, the current army is used.<br>On entering a specific Province the script checks if the 'Attack Army' template is set and use this as default<br>Depending on the action, it will change the units after you press 'Attack'/'Defend', deploy 'Defence' or deploy 'Siege'",
+		"button": "setupGVG",
+		"buttonText" :"SETUP",
+		"status": false,
+		"group": "Fighting",
+		"requieredModules":["gvg"],
+		"sort": 9
+	}
+]

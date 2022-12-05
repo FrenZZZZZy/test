@@ -1,0 +1,101 @@
+<div id="textpBarbg"></div>
+<div id="progressbarbg">
+    <div id="pbValuebg"></div>
+</div>
+<div id="resultbg" style="display: none;">
+    <table id="prodTable" class="sortable prod">
+        <tbody id="prodTableheader">
+            <tr>
+                <td style="text-align:center; width:40%">Chance: <span id="percentage">0</span>%</td>
+                <td style="text-align:center; width:40%">Tries: <span id="countTries">0</span>x</td>
+                <td style="text-align:center">
+                    <select id="CollectSource">
+                        <option value="strategy_points">Forge Points</option>
+                        <option value="goods">Goods</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table id="prodTable" class="sortable prod">
+        <tr>
+            <th style="text-align:center">Building</th>
+            <th style="text-align:center">Production (<span id="TextSource">Forge Points</span>)</th>
+            <th style="text-align:center"><button class="collectButton rounded afaebccdfd">Use Blue Galaxy</button></th>
+            <th style="text-align:center"><button class="collectAllButton rounded afaebccdfd">Collect All</button></th>
+            <th style="text-align:center"><button class="reload rounded afaebccdfd">Reload</button></th>
+        </tr>
+        <tbody id="prodTableBody">
+
+        </tbody>
+    </table>
+</div>
+
+<style>
+    #textpBarbg {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+    }
+
+    #textCountBar {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+    }
+
+    #progressbarbg {
+        background-color: black;
+        border-radius: 13px;
+        padding: 4px;
+    }
+
+    #progressbarbg>div {
+        background-color: orange;
+        width: 0%;
+        height: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    #pbValuebg {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+    }
+
+    #resultbg {
+        overflow: auto;
+        max-height: 400px;
+    }
+
+    tr.prod {
+        border-bottom: 3px hidden;
+        text-align: center;
+    }
+
+    td.prod {
+        text-align: center;
+    }
+
+    td.dia {
+        font-weight: bold;
+        color: deepskyblue;
+    }
+
+    table.prod {
+        border-collapse: collapse;
+    }
+
+    table th {
+        background-color: #57250c;
+        color: #ffffff;
+        font-weight: bold;
+        cursor: url(data:image/png;base64,AAACAAEAICAAAAIAAQCoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAAMFQAACxQAAAoTAAMMFAADDxcAAQsVAAILFAAACREIAg0VdgAME7cCDhdOAAsUAAALFAAACxQAAAsUAAALFAABDRUA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AAAwVAAALFAAAChMAAwwUAAMPFwABCxUAAgoTEgELE40EGyD/EERE/wENFK8ACxQAAAsUAAALFAAACxQAAAsUAAENFQD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAADBUAAAsUAAAKEwADDBQAAw8XAAAKFCICCxOjCCUo/xJTSf89q6P/BhYb2wAHECQADBUAAAwVAAALFAACDxkAAQ4WAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAALFHgACxM2AAoTAAMMFAADDBUqAA0VuQYoKf8PS0D/H39p/1rez/8cSUP5AAELcAALFAAACxQAAAoTAAcWIQACEBgA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8ACBgi/wMTH8EACBE2AQkRPgEPGM0IKiz/EFFF/w5NO/8smH//XeLN/zd+dv8ABA2zAAsTDAAMFQAAChIABhUgAAIQGAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAUKzr/FjdU/wcXJ9UADBLbCi4u/xRQRP8TUkH/D0s8/zqrk/9WzbX/TrOk/wgYHdsACRE2AAwVAAAJEQAGFR8AAhAYAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////ABQpOv8xX4v/JEdr/w8rOv8NMCT/E0Uy/xZPQf8VXEv/QKyU/1C3oP9WwKv/HUhH+QABC2oADBUAAAgQAAYVHwACEBgA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AESQz/zZmlf8yYY7/L1yH/yE+Tv8PKiH/DTMn/x1iUv86nor/QKeQ/0Gpkv8iZVn/AAYMsQAEDDAAAwtqBBIccAINFjj///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wALGyb/NWON/zZii/8+caH/R3ml/ylPZv8UKSP/GUc6/yBaSv8YUUL/HlxO/xM+Pf8MJjPvDiU63yJFWfUiP033Bg8Tgf///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AA4eK/8xYIn/NmGJ/zttm/9Beqv/S4W3/0R2lP8wWWb/L1xs/zZcb/80Xnj/TIeg/2Wjuv9trMD/brLO/zBIUukCBgko////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8ADhok+zZlkP83ZY7/PHCe/zx1pf9GgbD/Q3+r/2qs1P9jqMn/fMbo/2uy0/9xu9n/idLs/5bl/P9Fa3j9BQICbAQAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAMGyT9NWSO/zlplP89c6L/QHus/0N/r/9Mi7n/cLTW/4vS7P93vt3/WqLB/4DI5P+J1/H/cKm8/xQeIq8AAAAUBAEAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAwZIPUzZY3/OGqX/0J6q/9FgLH/RoGz/1aZw/9psNH/g8rk/3nB3/97w+H/jdbx/4DI3f8lPEPrAAAAOAAAAAAAAAAA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8ADBkh+TVljf8+c6P/R4G0/0SAsf9Cf7H/ZKnN/2y00/+Ax+b/dLva/47X8/+D0Oj/Rm58+wAAAHYAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAHERnvOWqV/0N7rv9Ff7H/RYGy/0eFtf9hpcj/dr/c/4TM6P9stNP/kuD5/2mpvf8SHiK/AAAAFAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAgSGes5a5f/Q36z/0F8rP9EgLL/VJTA/2aszf96weD/jdXy/4jT7f+Gzub/MkxV7wAAAEQAAAAAAAAAAAAAAAAAAAAA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8ACREW2z1wmv9Hhbv/Q3+x/0J8r/9gosn/esHg/2ivzv93wN//oe7//1eKnf0DBASPAgIBAAAAAAAAAAAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAGDxTTOWuV/06Nxv9EgLH/QHyv/12gxv+Dyub/b7jW/3rE3/+Bw9r/ERsf1wAAABYCAgEAAQEBAAEBAQABAQEAAQEBAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAQLD8cuXoX/SYrC/0N+r/9Ni7j/brPV/3zF4v+AyeP/nef4/zlaZvUAAABSAAAAAAEBAQABAQEAAQEBAAEBAQABAQEA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8ABQ0SvTFghf9NkMj/Pnqr/2Gjy/97wN7/hMzo/4fS6/9zrr3/AwYGmwYFBQIFBQQABQUEAAUFBAAFBQQABQUEAAUFBAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAFCw+tNGSJ/1CUzP8/eav/Y6bN/4fQ6/+X4fn/dLrQ/xkmK+cAAAAYBgYFAAYGBQAGBgUABgYFAAYGBQAGBgUABgYFAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAQJDaMzX4H/TpLL/0WBsP9prtL/gsrm/57s/v9FanX7AQECXgAAAAAGBgUABgYFAAYGBQAGBgUABgYFAAYGBQAGBgUA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AAwgMkS9aff9Ok8//Soe0/3O52f+T3/f/d7DC/woPEKkAAAAKAQEBAAEBAQABAQEAAQEBAAEBAQABAQEAAQEBAAEBAQD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wABBQiJKE9s/0mJxf9bmsT/itTv/4/W7P8qPEPpAQAAIgEAAAABAQEAAQEBAAEBAQABAQEAAQEBAAEBAQABAQEAAQEBAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAIHCnYoTmz/TZLO/2Cjyf+T4fn/SW99/wEDA2QBAQEAAgICAAICAgACAgIAAgICAAICAgACAgIAAgICAAICAgACAgIA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AAwcJcB4+Wv9Vm9P/jNj0/3y3yP8QFhmvAAAADgMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wABBAZeHD1X/3LA8P+a4/T/OFFW5QAAACwCAgIAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAAAAlgiQ1T/lez//2SOmv8EBwh0AAAAAgMEBAADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMAAwMDAAMDAwADAwMA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AAAABTi1SZv99w9j/GB8huQAAAA4AAAAAAQEBAAEBAQABAQEAAQEBAAEBAQABAQEAAQEBAAEBAQABAQEAAQEBAAEBAQD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wABAgNIHjM//ytDTukAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AAABASAECAifAgECYAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A//////+////+H////B////gf//8wD///AA///wAP//8AB///AAB//wAA//8AAf//AAH//wAD//8AB///AAf//wAP//8AD///AB///wA///8AP///AH///wD///8A////Af///4P///+D////h////4////+P////n////7////8=), auto;
+    }
+
+    th {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+</style>
